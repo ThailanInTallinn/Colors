@@ -12,6 +12,6 @@ struct color make_color(int, int, int);
 int getRed(struct color);
 bool equal_color(struct color, struct color);
 struct color brighter(struct color);
-
+struct color darker(struct color);
 
 #endif

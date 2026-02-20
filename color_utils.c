@@ -35,3 +35,11 @@ struct color brighter(struct color c){
 	}
 	return c;
 }
+
+struct color darker(struct color c){
+	int *ptr;
+
+	for(ptr = &c; ptr != &c.blue; ptr++)
+		*ptr *= 0.7;
+
+}
